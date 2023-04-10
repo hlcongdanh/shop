@@ -1,0 +1,220 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+.container {
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row {
+    margin: 0;
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+
+.background{
+    background-color: rgb(0, 162, 255);
+}
+
+nav{
+    width: 100%;
+}
+.logo{
+    color: white;
+    font-size: 30px;
+    line-height: 80px;
+    padding: 0 5%;
+}
+nav ul{
+    float: right;
+    margin: 0 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+
+
+.col-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+
+.menu ul li {
+    float: left;
+    margin-left: 20px;
+    list-style: none;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+p {
+    margin: 10px 0 10px 0;
+}
+
+footer {
+    display: block;
+    background-color: rgb(0, 162, 255);
+    padding: 20px 0 20px 0;
+}
+
+ul.menu_footer {
+    list-style: none;
+}
+.footer{
+    width: 1200px;
+}
+.footer h3 {
+    color: rgb(255, 196, 3);
+}
+
+.title h3 {
+    font-size: 32px;
+}
+
+.image img {
+    width: 100%;
+}
+
+.price{
+    font-size: 20px;
+    color: #0EA293;
+}
+
+.btn-toggle-menu{
+    color: white;
+    font-size: 30px;
+    margin: 0 5%;
+    line-height: 80px;
+    float: right;
+    display: none;
+}
+#toggle-menu{
+    display: none;
+}
+table{
+    width: 100%;
+}
+table tr th{
+    color: #cbf192;
+    background-color: #283894;
+    padding: 10px;
+    width: 25%;
+}
+table tr td{
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    justify-content: center;
+}
+img{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+input{
+    width: 25px;
+    font-size: 18px;
+}
+button{
+    cursor: pointer;
+    background-color: #ffffff;
+    border: 2px solid #146C94;
+    color: #146C94;
+    padding: 6px;
+    width: 150px;
+    height: 60px;
+    margin: 10px 5px 10px 5px;
+}
+button p {
+    font-size: 18px;
+}
+
+button:hover{
+    background-color: #146C94;
+    color: #ffffff;
+}
+h3{
+    font-size: 26px;
+}
+@media screen and (max-width: 768px){
+    nav{
+        flex-wrap: wrap;
+    }
+    .menu{
+        display: none;
+    }
+    .btn-toggle-menu{
+        display: unset;
+    }
+    #toggle-menu:checked +.menu{
+        display: block;
+        width: 100%;
+    }
+    nav ul{
+        width: 100%;
+        background: #2c3e50;
+        top: 80px;
+        left: 0;
+        margin: 0;
+        text-align: center;
+    }
+    nav ul li{
+        margin-left: 20px;
+        display: block;
+    }
+    .col-2th{
+        flex: 0 0 80%;
+        max-width: 80%;
+    }
+    .name{
+        font-size: 25px;
+    }
+    .price{
+        font-size: 28px;
+    }
+    .center{
+        text-align: center;
+        justify-content: center;
+    }
+    #search-text{
+        width: 300px;
+    }
+    .col-3{
+        flex: 0 0 80%;
+        max-width: 80%;
+        padding: 10px;
+    }
+    .col-3 h3{
+        text-align: center;
+        font-size: 20px;
+    }
+    table tr td{
+        align-items: center;
+        text-align: center;
+        font-size: 18px;
+        justify-content: center;
+    }
+}
